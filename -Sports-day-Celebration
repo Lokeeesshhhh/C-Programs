@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int s,t,student_in_class, Total_no_of_teams;
+    cout<<"Enter the total no of student :"<<endl;
+    cin>>s;
+    cout<<"Enter the no of teams :"<<endl;
+    cin>>t;
+    student_in_class=s/t;
+    Total_no_of_teams=s%t;
+    cout<<student_in_class<<" "<< Total_no_of_teams<<endl;
+    return 0;
+    
+}
