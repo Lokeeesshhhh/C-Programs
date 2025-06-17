@@ -1,0 +1,28 @@
+#include<iostream>
+#include<iomanip>
+#include <set>
+using namespace std;
+int main()
+{
+    float p,y,r;
+    cout<<"Enter the value of p :";
+    cin>>p;
+    cout<<"Enter the value of y :"<<endl;
+    cin>>y;
+    cout<<"Enter the value of r :"<<endl;
+    cin>>r;
+    float si;
+    si=(p*y*r)/100;
+    float a;
+    a=p+si;
+    float d;
+    d=(0.02)*si;
+    float final;
+    final=a-d;
+    cout<<fixed<<setprecision(2);
+    cout<<si<<endl;
+    cout<<a<<endl;
+    cout<<d<<endl;
+    cout<<final<<endl;
+    return 0;
+}
