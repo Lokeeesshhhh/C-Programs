@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int x,y;
+    cout<<"Enter the number x :";
+    cin>>x;
+    cout<<"Enter the number y :";
+    cin>>y;
+    if(x>yhttps://www.onlinegdb.com/online_c++_compiler#editor_1)
+    {
+        
+        cout<<"This number is greater :"<<x;
+        
+    }
+    else
+    {
+        cout<<"This number is greatern :"<<y;
+    }
+}
