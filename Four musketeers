@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+#include <iomanip>
+int main() {
+    int x1, y1, x2, y2, x3, y3;
+    cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3;
+    float D = 2 * (x1*(y2 - y3) + x2*(y3 - y1) + x3*(y1 - y2));
+    if (D == 0) 
+    {
+        cout << "The points are collinear, circumcenter undefined." << endl;
+        return 1;
+    }
+    float Ax = ((x1*x1 + y1*y1)*(y2 - y3) + (x2*x2 + y2*y2)*(y3 - y1) + (x3*x3 + y3*y3)*(y1 - y2)) / D;
+    float Ay = ((x1*x1 + y1*y1)*(x3 - x2) + (x2*x2 + y2*y2)*(x1 - x3) + (x3*x3 + y3*y3)*(x2 - x1)) / D;
+    cout << fixed << setprecision(1);
+    cout << Ax << " " << Ay << endl;
+
+    return 0;
+}
