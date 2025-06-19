@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int x;
+    cout<<"Enter the number x :";
+    cin>>x;
+    if(x<0)
+    {
+        cout<<"This number is negative :"<<x<<endl;
+    }
+    else
+    {
+        cout<<"This number is positive :"<<x;
+    }
+ return 0;
+    
+    
+}
