@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{ 
+    int m,a,c;
+    cin>>m>>a>>c;
+    int totalweight=(a*75)+(c*30);
+if (totalweight <=m)
+{
+        cout << "Boat is stable" << endl;
+    } else
+    {
+        cout << "Boat will drown" << endl;
+    }
+}
