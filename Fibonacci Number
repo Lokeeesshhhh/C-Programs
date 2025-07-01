@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+bool isPerfectSquare(int x) 
+{ 
+    int s = (int)sqrt(x);
+    return (s * s == x);
+}
+int main() 
+{
+    int n;
+    cin >> n;
+    int a = 5 * n * n + 4;
+    int b = 5 * n * n - 4;
+    if (isPerfectSquare(a) || isPerfectSquare(b))
+    {
+        cout << "Fibonacci Number" << endl;
+    } else
+    {
+        cout << "Not Fibonacci Number" << endl;
+    }
+
+    return 0;
+}
