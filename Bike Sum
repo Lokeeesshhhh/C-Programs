@@ -1,0 +1,47 @@
+#include <iostream>
+#include <limits>
+using namespace std;
+int main() {
+    int A, B, C, speed;
+    cin >> A >> B >> C >> speed;
+
+    if (speed <= 0) {
+        cout << "No path exist" << endl;
+        return 0;
+    }
+    double minTime = numeric_limits<double>::max();
+    char road = 'N'; 
+    if (A > 0) {
+        double timeA = (double)A / speed;
+        if (timeA < minTime) {
+            minTime = timeA;
+            road = 'A';
+        }
+    }
+
+    if (B > 0) {
+        double timeB = (double)B / speed;
+        if (timeB < minTime) {
+            minTime = timeB;
+            road = 'B';
+        }
+    }
+
+    if (C > 0) {
+        double timeC = (double)C / speed;
+        if (timeC < minTime) {
+            minTime = timeC;
+            road = 'C';
+        }
+    }
+
+    if (road == 'N') {
+        cout << "No path exist" << endl;
+    } else {
+        cout << "Bike 1 goes into road " << road << endl;
+    }
+
+    return 0;
+}
+
+   
