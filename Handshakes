@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int HandShake(int n) 
+{
+    return (n * (n - 1)) / 2; 
+}
+int main() {
+    int students;
+    cin>>students;  
+    cout<<HandShake(students) << endl;
+    return 0;
+}
