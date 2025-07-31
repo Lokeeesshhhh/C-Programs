@@ -1,0 +1,22 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int day=0,leftover=0;
+    int newchalk=(int)sqrt(n);
+    while(n>0)
+    {
+        day++;
+        n--;
+        leftover++;
+     if(leftover>=newchalk)
+    {
+        n++;
+        leftover-=newchalk;
+    }
+}
+    cout<<day;
+}
