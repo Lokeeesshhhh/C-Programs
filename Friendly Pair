@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,s,sum=0;
+  cin>>n>>s;
+  for(int i=1;i<=n/2;i++)
+  {
+    if(n%i==0)
+    {
+      sum+=i;
+    }
+  }
+  int sum1=0;
+  for(int i=1;i<=s/2;i++)
+  {
+    if(s%i==0)
+    {
+      sum1+=i;
+    }
+  }
+  if((double)n/sum == (double)s/sum1)
+  {
+    cout<<"Friendly Pair";
+  }
+  else
+  {
+    cout<<"Not Friendly Pair";
+  }
+  
+}
